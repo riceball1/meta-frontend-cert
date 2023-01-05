@@ -100,9 +100,9 @@ main {
 section {
     background-color: var(--dark-color);
     flex: 1;
-    width: 30%;
+    width: 20%;
     margin: 5px;
-    border-radius: 5px;
+    border-radius: 8px;
     display: flex;
     flex-direction: column;
     cursor: pointer;
@@ -127,6 +127,8 @@ section p {
 
 .section-image {
     width: 100%;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
 }
 
 #schedule {

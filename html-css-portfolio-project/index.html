@@ -25,7 +25,7 @@
       </div>
       <nav>
         <ul>
-          <li><a href="./index.html">Home</a></li>
+          <li><a href="./index.html" onclick="handleHomeLink()">Home</a></li>
           <li>Products</li>
           <li>Services</li>
           <li>About</li>
@@ -78,6 +78,10 @@
         promotionBanner.addEventListener('click', function() {
             alert('You just selected 30% promotion offer!')
         })
+
+        function handleHomeLink() {
+            alert('You clicked on the home link!')
+        }
 
     </script>
   </body>
