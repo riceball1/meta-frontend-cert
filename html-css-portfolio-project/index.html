@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Lucky Shrub</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css"
+      integrity="sha512-IJEbgDEF7OeKJRa0MY2PApnyJHRIsgzCveek4ec8VWQ+7KG3ZSKVNYa5xP/Gh0hVP0Mwb+gBsk+GwR3JQGhQNg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Slab&family=Roboto:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div id="header-title">
+          <img src="./public/asset3.png" alt="lucky shrub logo" id="main-logo" />
+          <h1>Lucky Shrub</h1>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="./index.html">Home</a></li>
+          <li>Products</li>
+          <li>Services</li>
+          <li>About</li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+        <div id="promotional-banner">
+            <h2>30% Off Entire Store!</h2>
+            <p>Get the best deal while it lasts!</p></div>
+        <div id="main-section">
+
+            <section class="section-box">
+                <img src="https://www.diythought.com/wp-content/uploads/2019/11/1-5-DIY-recycled-plant-pots.jpg" alt="pet pots" class="section-image"/>
+                <h2>Cozy Shrubs as Home Pets</h2>
+                <p>
+                Need some company, why not add little cozy shrubs to your home. Plants
+                have been known to help cure loneliness and provide a lot of fresh
+                air.
+              </p>
+            </section>
+            <section class="section-box">
+                <img src="https://images.thdstatic.com/productImages/ec5fe746-3a8b-4327-96d8-ac923ec16518/svn/lively-root-indoor-plants-lrpetfr6-1f_600.jpg" alt="shrub photo" class="section-image"/>
+                <h2>Select the Right Size</h2>
+                <p>
+                Need some company, why not add little cozy shrubs to your home. Plants
+                have been known to help cure loneliness and provide a lot of fresh
+                air.
+              </p>
+          </section>
+            <section class="section-box">
+              <img src="https://www.venuereport.com/media/cache/resolve/venue_roundup_single_image_flex/uploads/+0Regular_Roundup/2018/3-March/PlantShops/GlasswingShop-01.jpg" alt="lucky shrub store" class="section-image"/>
+              <h2>Open for Pickup</h2>
+              <p>
+              Come visit our newly rennovated store to pick up your lucky shrubs today!
+            </p>
+            <ul id="schedule">
+              <li>Mon - Fri 9am to 4pm</li>
+              <li>Sat - Sun 8am to 4pm</li>
+            </ul>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <img src="./public/asset3.png" src="logo" id="footer-logo">
+      <div>copyright &#169; 2023</div>
+    </footer>
+    <script>
+        const promotionBanner = document.getElementById('promotional-banner');
+        promotionBanner.addEventListener('click', function() {
+            alert('You just selected 30% promotion offer!')
+        })
+
+    </script>
+  </body>
+</html>
+

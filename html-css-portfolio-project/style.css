@@ -1,0 +1,162 @@
+
+/* variables */
+:root {
+    --primary-color: #1F8B7E;
+    --dark-color: #000000;
+    --light-color: #FFFFFF;
+    --lightgray-color: lightgray;
+
+}
+
+/* General Style */
+body {
+    grid-template-areas: 'header header'
+    'main main'
+    'footer footer';
+    grid-area: auto;
+    height: 100vh;
+    font-family: "Roboto", sans-serif;
+    color: var(--light-color);
+}
+a {
+    color: var(--lightgray-color);
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+/* Header Section */
+h1 {
+    font-size: 2rem;
+    color: var(--primary-color);
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+#header-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    margin-bottom: 20px;
+    gap: 5px;
+}
+
+#main-logo {
+    width: 60px;
+    height: 60px;
+}
+
+header {
+    background-color: var(--dark-color);
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+}
+
+header ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    color: var(--lightgray-color);
+}
+
+/* Main Section */
+main {
+    background-color: var(--primary-color);
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+#main-section {
+    display: flex;
+    flex-direction: row;
+}
+
+#promotional-banner {
+    background-color: var(--dark-color);
+    color: var(--light-color);
+    font-size: 2rem;
+    width: 80%;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: inset;
+    cursor: pointer;
+}
+
+
+section {
+    background-color: var(--dark-color);
+    flex: 1;
+    width: 30%;
+    margin: 5px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    transition: background-color 3s;
+}
+
+
+section h2 {
+    color: var(--lightgray-color);
+    font-size: 1.5rem;
+    padding: 5px;
+    font-weight: bold;
+}
+
+section:hover {
+    background-color: var(--primary-color);
+}
+
+section p {
+    padding: 10px;
+}
+
+.section-image {
+    width: 100%;
+}
+
+#schedule {
+    padding-left: 20px;
+    padding-bottom: 10px;
+}
+
+
+@media only screen and (max-width: 600px) {
+    #main-section {
+        flex-direction: column;
+    }
+    
+    section {
+        width: 100%;
+    }
+  }
+
+
+/* Footer Section*/
+
+footer {
+    background-color: var(--dark-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+#footer-logo {
+    width: 25px;
+
+}
